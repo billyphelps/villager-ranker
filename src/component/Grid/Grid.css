@@ -1,0 +1,32 @@
+.gridTiles {
+    max-width: 60vw;
+    top: 0;
+    padding: 5vmin;
+    /* display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between; */
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(8rem, 1fr));
+    grid-auto-rows: 1fr;
+    grid-gap: 10px;
+}
+
+.gridTiles::before {
+    width: 0;
+    padding-bottom: 100%;
+    grid-row: 1 / 1;
+    grid-column: 1 / 1;
+}
+
+.grid > *:first-child {
+    grid-row: 1 / 1;
+    grid-column: 1 / 1;
+}
+
+.controls > button{
+    font-size: xx-large;
+    padding: 10px;
+    margin-bottom: 10px;
+    width: 20%;
+}

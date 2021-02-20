@@ -1,0 +1,36 @@
+.ranking {
+    border: coral;
+    border-radius: 20px;
+    border-style: solid;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    height: 15vh;
+    max-width: 90%;
+    margin: 5%;
+}
+
+.ranking__image {
+    height: 100%;
+    width: 15vh;
+    position: relative;
+}
+
+.ranking__image img {
+    object-fit: cover;
+	height: 80%;
+    width: 80%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    border-radius: 20px;
+}
+
+/* .ranking__text {
+    vertical-align: middle;
+    text-align: center;
+} */
